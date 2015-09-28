@@ -211,6 +211,13 @@
     <Compile Include="Models\Default\AccountBindingModels.cs" />
     <Compile Include="Models\Default\AccountViewModels.cs" />
     <Compile Include="Models\Default\IdentityModels.cs" />
+    <Compile Include="Models\ECC\EccSign.cs" />
+    <Compile Include="Models\ECC\SingleCngKey.cs" />
+    <Compile Include="Models\Result\ResultModelT.cs" />
+    <Compile Include="Models\Result\ResultState.cs" />
+    <Compile Include="Models\Result\ResultStateHelper.cs" />
+    <Compile Include="Models\RSA\RSACache.cs" />
+    <Compile Include="Models\RSA\RSAModel.cs" />
     <Compile Include="Models\Token\DeivceSelected.cs" />
     <Compile Include="Models\Token\SingleToken.cs" />
     <Compile Include="Models\Token\SingleTokenMutability.cs" />
@@ -281,8 +288,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\ECC\" />
-    <Folder Include="Models\RSA\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

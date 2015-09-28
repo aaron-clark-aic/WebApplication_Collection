@@ -1,6 +1,9 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WebApplication_CQRestAPI.Models.Tool.Token;
+using WebApplication_Collection.Models.RSA;
+using System.Security.Cryptography;
+using System.IO;
 
 namespace WebApplication_Collection.Tests.Controllers
 {
@@ -66,6 +69,32 @@ namespace WebApplication_Collection.Tests.Controllers
             } while (i < 10);
 
             SingleUserTokenMutability _stm = stm;
+        }
+
+
+        /// <summary>
+        ///  测试写入rsa的xml文件
+        /// </summary>
+        [TestMethod]
+        public void TestRsaWriteXmlFile() {
+
+            //RSACryptoServiceProvider rsa = new RSACryptoServiceProvider();
+            //string pu_str = System.AppDomain.CurrentDomain.SetupInformation.ApplicationBase + System.Configuration.ConfigurationManager.AppSettings["RSA_xmlFile_address_private"];
+            //string pr_str = System.AppDomain.CurrentDomain.SetupInformation.ApplicationBase + System.Configuration.ConfigurationManager.AppSettings["RSA_xmlFile_address_public"];
+            //using (StreamWriter writer = new StreamWriter(pr_str))  //这个文件要保密...
+            //{
+
+            //    writer.WriteLine(rsa.ToXmlString(true));
+
+            //}
+            //using (StreamWriter writer = new StreamWriter(pu_str))
+            //{
+
+            //    writer.WriteLine(rsa.ToXmlString(false));
+
+            //}
+
+            string _keyStr = Convert.ToString( RSACache.DEF_PK);
         }
 
     }
