@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.Text.RegularExpressions;
+using WebApplication_Collection.Models.Attribute.Regex;
 
 namespace WebApplicationV.Utils.Attribute
 {
@@ -26,8 +27,9 @@ namespace WebApplicationV.Utils.Attribute
         /// Constructor that accepts the regular expression pattern
         /// </summary>
         /// <param name="pattern">The regular expression to use.  It cannot be null.</param>
-        public RegularExpressionDictionaryAttribute(string pattern){
-            this.Pattern = pattern;
+        public RegularExpressionDictionaryAttribute(EnumDictionaryDescription pattern){
+
+            this.Pattern = EnumHelper.GetDescription(pattern);
         }
 
         /// <summary>

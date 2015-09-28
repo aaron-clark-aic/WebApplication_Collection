@@ -4,6 +4,9 @@ using WebApplication_CQRestAPI.Models.Tool.Token;
 using WebApplication_Collection.Models.RSA;
 using System.Security.Cryptography;
 using System.IO;
+using WebApplication_Collection.Tests.Model;
+using WebApplicationV.Utils.Attribute;
+using WebApplication_collection.Models.Filter;
 
 namespace WebApplication_Collection.Tests.Controllers
 {
@@ -97,5 +100,18 @@ namespace WebApplication_Collection.Tests.Controllers
             string _keyStr = Convert.ToString( RSACache.DEF_PK);
         }
 
+        [TestMethod]
+        
+        public void TestReg() {
+            TestRegxAttributeMode tm = new TestRegxAttributeMode();
+            tm.Parameter_password = "1234@#%^$*))@_><?";
+            tm.Parameter_string = "1234";
+            TestReg_1(tm);
+        }
+
+        [RegexAttribute]
+        private TestRegxAttributeMode TestReg_1(TestRegxAttributeMode tm) {
+            return tm;
+        }
     }
 }

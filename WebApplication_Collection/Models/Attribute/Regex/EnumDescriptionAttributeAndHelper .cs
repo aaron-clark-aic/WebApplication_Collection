@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 using System.Web.Http.Filters;
@@ -11,7 +12,7 @@ namespace WebApplication_Collection.Models.Attribute.Regex
     /// [aaron_clark_aic][20150928][create]
     /// </summary>
     [AttributeUsage(AttributeTargets.Field, AllowMultiple = false)]
-     public sealed class EnumDescriptionAttribute : FilterAttribute
+     public sealed class EnumDescriptionAttribute : ValidationAttribute
     {
         private string description;
         public string Description { get { return description; } }

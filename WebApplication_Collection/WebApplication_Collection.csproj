@@ -208,6 +208,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Attribute\Regex\DictionaryRegex.cs" />
+    <Compile Include="Models\Attribute\Regex\EnumDescriptionAttributeAndHelper .cs" />
+    <Compile Include="Models\Attribute\Regex\EnumDictionaryDescription.cs" />
+    <Compile Include="Models\Attribute\Regex\RegexAttribute.cs" />
+    <Compile Include="Models\Attribute\Regex\RegularExpressionDictionaryAttribute.cs" />
     <Compile Include="Models\Default\AccountBindingModels.cs" />
     <Compile Include="Models\Default\AccountViewModels.cs" />
     <Compile Include="Models\Default\IdentityModels.cs" />
@@ -288,6 +293,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Models\DLL\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
