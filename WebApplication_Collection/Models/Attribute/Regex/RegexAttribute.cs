@@ -12,7 +12,7 @@ namespace WebApplication_collection.Models.Filter
         /// [aaron.clark.aic][2015-01-30 13:34][refactor]
         /// </summary>
         /// <param name="actionContext"></param>
-        private static void IsParameterValidated(HttpActionContext actionContext)
+        private void IsParameterValidated(HttpActionContext actionContext)
         {
             if (!actionContext.ModelState.IsValid)
             {

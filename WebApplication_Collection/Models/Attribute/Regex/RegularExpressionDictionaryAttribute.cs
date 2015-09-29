@@ -80,7 +80,7 @@ namespace WebApplicationV.Utils.Attribute
         /// <exception cref="ArgumentException"> is thrown if the <see cref="Pattern"/> is not a valid regular expression.</exception>
         public override string FormatErrorMessage(string name)
         {
-            this.SetupRegex();
+            //this.SetupRegex();
 
             return String.Format(CultureInfo.CurrentCulture, ErrorMessageString, name, this.Pattern);
         }
@@ -98,7 +98,7 @@ namespace WebApplicationV.Utils.Attribute
                 {
                     throw new InvalidOperationException("Regex is error: " + Pattern);
                 }
-                this.Regex = DictionaryRegex.Regex(Pattern);
+                this.Regex = new Regex(Pattern);
             }
         }
 

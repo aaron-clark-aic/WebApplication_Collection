@@ -213,6 +213,7 @@
     <Compile Include="Models\Attribute\Regex\EnumDictionaryDescription.cs" />
     <Compile Include="Models\Attribute\Regex\RegexAttribute.cs" />
     <Compile Include="Models\Attribute\Regex\RegularExpressionDictionaryAttribute.cs" />
+    <Compile Include="Models\Attribute\Regex\TestRegxAttributeMode.cs" />
     <Compile Include="Models\Default\AccountBindingModels.cs" />
     <Compile Include="Models\Default\AccountViewModels.cs" />
     <Compile Include="Models\Default\IdentityModels.cs" />
