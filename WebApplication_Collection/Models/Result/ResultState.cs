@@ -29,10 +29,6 @@ namespace WebApplicationV.Models
         /// </summary>
         ERR_IN_BLACK = -20,
         /// <summary>
-        /// 找不到家庭
-        /// </summary>
-        NO_Family = -19,
-        /// <summary>
         /// 发送验证码失败
         /// </summary>
         SEND_VFR_ERRO = -18,

@@ -208,7 +208,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Attribute\Regex\DictionaryRegex.cs" />
     <Compile Include="Models\Attribute\Regex\EnumDescriptionAttributeAndHelper .cs" />
     <Compile Include="Models\Attribute\Regex\EnumDictionaryDescription.cs" />
     <Compile Include="Models\Attribute\Regex\RegexAttribute.cs" />
@@ -217,8 +216,14 @@
     <Compile Include="Models\Default\AccountBindingModels.cs" />
     <Compile Include="Models\Default\AccountViewModels.cs" />
     <Compile Include="Models\Default\IdentityModels.cs" />
+    <Compile Include="Models\DLL\SQLHelper\MisSystemException.cs" />
+    <Compile Include="Models\DLL\SQLHelper\SQLHelper.cs" />
+    <Compile Include="Models\DLL\SQLHelper\SystemError.cs" />
+    <Compile Include="Models\DLL\SQLHelper\SystemHTML.cs" />
+    <Compile Include="Models\DLL\SQLHelper\SystemTools.cs" />
     <Compile Include="Models\ECC\EccSign.cs" />
     <Compile Include="Models\ECC\SingleCngKey.cs" />
+    <Compile Include="Models\MD5\CHMD5.cs" />
     <Compile Include="Models\Result\ResultModelT.cs" />
     <Compile Include="Models\Result\ResultState.cs" />
     <Compile Include="Models\Result\ResultStateHelper.cs" />
@@ -294,7 +299,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\DLL\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -317,7 +321,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>63463</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
