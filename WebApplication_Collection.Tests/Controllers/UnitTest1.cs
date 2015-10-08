@@ -7,6 +7,9 @@ using System.IO;
 using WebApplication_Collection.Tests.Model;
 using WebApplicationV.Utils.Attribute;
 using WebApplication_collection.Models.Filter;
+using System.Configuration;
+using System.Web.Configuration;
+using NLog;
 
 namespace WebApplication_Collection.Tests.Controllers
 {
@@ -99,6 +102,16 @@ namespace WebApplication_Collection.Tests.Controllers
 
             string _keyStr = Convert.ToString( RSACache.DEF_PK);
         }
-        
+
+        /// <summary>
+        /// Nlog测试
+        /// </summary>
+        [TestMethod]
+        public void testNlog()
+        {
+            Logger logger = LogManager.GetCurrentClassLogger();
+            logger.Trace("Trace" + DateTime.Now);
+        }
+
     }
 }
