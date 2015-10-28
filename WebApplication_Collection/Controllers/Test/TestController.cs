@@ -12,12 +12,10 @@ namespace WebApplication_Collection.Controllers.Test
     [RoutePrefix("api/Test")]
     public class TestController : ApiController
     {
-
         [Route("regex")]
         [RegexAttribute]
         public IHttpActionResult Logout(TestRegxAttributeMode tm)
         {
-            
             return Ok();
         }
     }
